@@ -12,8 +12,8 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**") // Appliquer à toutes les routes
-                        .allowedOrigins("https://actisens-91a87.web.app/") // Autoriser toutes les origines (ou mets l'URL de ton frontend Angular ici)
+                registry.addMapping("/**") 
+                        .allowedOrigins("https://acti-sens-defba.web.app/") 
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
             }
